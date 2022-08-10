@@ -1,5 +1,5 @@
 {
-  "packagePath": "ptv-xserver-php-client",
+  "packagePath": "generated",
   "srcBasePath": "src",
   "modelPackage": "model",
   "apiPackage": "api",
