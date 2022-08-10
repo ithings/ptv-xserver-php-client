@@ -1,0 +1,10 @@
+{
+  "packagePath": "ptv-xserver-php-client",
+  "srcBasePath": "src",
+  "modelPackage": "model",
+  "apiPackage": "api",
+  "invokerPackage": "ithings\\ptvxserver",
+  "gitUserId": "ithings",
+  "gitRepoId": "ptv-xserver-php-client",
+  "artifactVersion": "2.26"
+}
