@@ -1,5 +1,5 @@
 {
-  "packagePath": "generated",
+  "packagePath": ".",
   "srcBasePath": "src",
   "modelPackage": "model",
   "apiPackage": "api",
