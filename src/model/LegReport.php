@@ -60,7 +60,7 @@ class LegReport implements ModelInterface, ArrayAccess
         'start_tour_event_index' => '\ithings\ptvxserver\model\Index',
 'end_tour_event_index' => '\ithings\ptvxserver\model\Index',
 'driving_time' => '\ithings\ptvxserver\model\Duration',
-'distance' => '\ithings\ptvxserver\model\Distance',
+'distance' => 'float',
 'estimated_by_direct_distance' => 'bool',
 'route_violated' => 'bool',
 'transport_quantities' => '\ithings\ptvxserver\model\TransportQuantityUnit[]',
@@ -314,7 +314,7 @@ class LegReport implements ModelInterface, ArrayAccess
     /**
      * Gets distance
      *
-     * @return \ithings\ptvxserver\model\Distance
+     * @return float
      */
     public function getDistance()
     {
@@ -324,7 +324,7 @@ class LegReport implements ModelInterface, ArrayAccess
     /**
      * Sets distance
      *
-     * @param \ithings\ptvxserver\model\Distance $distance distance
+     * @param float $distance The driven distance between start and end location.
      *
      * @return $this
      */

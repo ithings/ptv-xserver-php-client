@@ -55,7 +55,7 @@ class ManipulateRouteWaypoint extends InputWaypoint
       */
     protected static $swaggerTypes = [
         'coordinate' => '\ithings\ptvxserver\model\Coordinate',
-'radius' => '\ithings\ptvxserver\model\Distance'    ];
+'radius' => 'float'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -229,7 +229,7 @@ class ManipulateRouteWaypoint extends InputWaypoint
     /**
      * Gets radius
      *
-     * @return \ithings\ptvxserver\model\Distance
+     * @return float
      */
     public function getRadius()
     {
@@ -239,7 +239,7 @@ class ManipulateRouteWaypoint extends InputWaypoint
     /**
      * Sets radius
      *
-     * @param \ithings\ptvxserver\model\Distance $radius radius
+     * @param float $radius A radius that specifies how close the route shall pass by the specified coordinate. This radius refers to the distance on the road network in meters.
      *
      * @return $this
      */

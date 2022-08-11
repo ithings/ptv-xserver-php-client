@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **end_node_index** | [**\ithings\ptvxserver\model\Index**](Index.md) |  | [optional] 
 **start_toll_section_index** | [**\ithings\ptvxserver\model\Index**](Index.md) |  | [optional] 
 **end_toll_section_index** | [**\ithings\ptvxserver\model\Index**](Index.md) |  | [optional] 
-**distance** | [**\ithings\ptvxserver\model\Distance**](Distance.md) |  | 
+**distance** | **float** | The travel distance for the leg. It is the sum of distances of all segments in the leg and hence is a whole number without decimal places (see Segment.distance). | 
 **travel_time** | [**\ithings\ptvxserver\model\Duration**](Duration.md) |  | 
 **traffic_delay** | [**\ithings\ptvxserver\model\Duration**](Duration.md) |  | [optional] 
 **toll_summary** | [**\ithings\ptvxserver\model\TollSummary**](TollSummary.md) |  | [optional] 

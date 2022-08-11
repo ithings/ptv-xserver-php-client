@@ -54,7 +54,7 @@ class DistanceBasedHorizon extends Horizon
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'distance' => '\ithings\ptvxserver\model\Distance'    ];
+        'distance' => 'float'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -196,7 +196,7 @@ class DistanceBasedHorizon extends Horizon
     /**
      * Gets distance
      *
-     * @return \ithings\ptvxserver\model\Distance
+     * @return float
      */
     public function getDistance()
     {
@@ -206,7 +206,7 @@ class DistanceBasedHorizon extends Horizon
     /**
      * Sets distance
      *
-     * @param \ithings\ptvxserver\model\Distance $distance distance
+     * @param float $distance A distance that specifies the range of the horizon.
      *
      * @return $this
      */

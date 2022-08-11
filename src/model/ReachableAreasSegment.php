@@ -57,7 +57,7 @@ class ReachableAreasSegment implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'distance' => '\ithings\ptvxserver\model\Distance',
+        'distance' => 'float',
 'travel_time' => '\ithings\ptvxserver\model\Duration',
 'polyline' => '\ithings\ptvxserver\model\EncodedGeometry',
 'id' => '\ithings\ptvxserver\model\SegmentId',
@@ -230,7 +230,7 @@ class ReachableAreasSegment implements ModelInterface, ArrayAccess
     /**
      * Gets distance
      *
-     * @return \ithings\ptvxserver\model\Distance
+     * @return float
      */
     public function getDistance()
     {
@@ -240,7 +240,7 @@ class ReachableAreasSegment implements ModelInterface, ArrayAccess
     /**
      * Sets distance
      *
-     * @param \ithings\ptvxserver\model\Distance $distance distance
+     * @param float $distance The accumulated distance of the segment during reachable areas calculation.
      *
      * @return $this
      */

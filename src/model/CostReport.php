@@ -60,7 +60,7 @@ class CostReport implements ModelInterface, ArrayAccess
         'travel_time' => '\ithings\ptvxserver\model\Duration',
 'driving_time' => '\ithings\ptvxserver\model\Duration',
 'service_time' => '\ithings\ptvxserver\model\Duration',
-'distance' => '\ithings\ptvxserver\model\Distance'    ];
+'distance' => 'float'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -299,7 +299,7 @@ class CostReport implements ModelInterface, ArrayAccess
     /**
      * Gets distance
      *
-     * @return \ithings\ptvxserver\model\Distance
+     * @return float
      */
     public function getDistance()
     {
@@ -309,7 +309,7 @@ class CostReport implements ModelInterface, ArrayAccess
     /**
      * Sets distance
      *
-     * @param \ithings\ptvxserver\model\Distance $distance distance
+     * @param float $distance The total driven distance.
      *
      * @return $this
      */

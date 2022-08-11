@@ -61,7 +61,7 @@ class Waypoint implements ModelInterface, ArrayAccess
 'country' => '\ithings\ptvxserver\model\CountryCode',
 'linked_coordinate' => '\ithings\ptvxserver\model\Coordinate',
 'reference_coordinate' => '\ithings\ptvxserver\model\Coordinate',
-'link_distance' => '\ithings\ptvxserver\model\Distance',
+'link_distance' => 'float',
 'link_travel_time' => '\ithings\ptvxserver\model\Duration',
 'node_index' => '\ithings\ptvxserver\model\Index'    ];
 
@@ -347,7 +347,7 @@ class Waypoint implements ModelInterface, ArrayAccess
     /**
      * Gets link_distance
      *
-     * @return \ithings\ptvxserver\model\Distance
+     * @return float
      */
     public function getLinkDistance()
     {
@@ -357,7 +357,7 @@ class Waypoint implements ModelInterface, ArrayAccess
     /**
      * Sets link_distance
      *
-     * @param \ithings\ptvxserver\model\Distance $link_distance link_distance
+     * @param float $link_distance Distance as the crow flies from the input coordinate to the linked coordinate.
      *
      * @return $this
      */

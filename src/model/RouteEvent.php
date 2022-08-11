@@ -61,7 +61,7 @@ class RouteEvent implements ModelInterface, ArrayAccess
 'starts_at' => '\DateTime',
 'coordinate' => '\ithings\ptvxserver\model\Coordinate',
 'node_index' => '\ithings\ptvxserver\model\Index',
-'distance_from_start' => '\ithings\ptvxserver\model\Distance',
+'distance_from_start' => 'float',
 'travel_time_from_start' => '\ithings\ptvxserver\model\Duration',
 'type' => 'string'    ];
 
@@ -339,7 +339,7 @@ class RouteEvent implements ModelInterface, ArrayAccess
     /**
      * Gets distance_from_start
      *
-     * @return \ithings\ptvxserver\model\Distance
+     * @return float
      */
     public function getDistanceFromStart()
     {
@@ -349,7 +349,7 @@ class RouteEvent implements ModelInterface, ArrayAccess
     /**
      * Sets distance_from_start
      *
-     * @param \ithings\ptvxserver\model\Distance $distance_from_start distance_from_start
+     * @param float $distance_from_start The distance of the route from the start up to this event.
      *
      * @return $this
      */

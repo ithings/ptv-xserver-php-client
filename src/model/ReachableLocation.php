@@ -57,7 +57,7 @@ class ReachableLocation implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'distance' => '\ithings\ptvxserver\model\Distance',
+        'distance' => 'float',
 'travel_time' => '\ithings\ptvxserver\model\Duration',
 'input_location_index' => '\ithings\ptvxserver\model\Index'    ];
 
@@ -212,7 +212,7 @@ class ReachableLocation implements ModelInterface, ArrayAccess
     /**
      * Gets distance
      *
-     * @return \ithings\ptvxserver\model\Distance
+     * @return float
      */
     public function getDistance()
     {
@@ -222,7 +222,7 @@ class ReachableLocation implements ModelInterface, ArrayAccess
     /**
      * Sets distance
      *
-     * @param \ithings\ptvxserver\model\Distance $distance distance
+     * @param float $distance The distance from the input waypoint to this location or vice versa.
      *
      * @return $this
      */

@@ -57,7 +57,7 @@ class AlternativeRoute implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'distance' => '\ithings\ptvxserver\model\Distance',
+        'distance' => 'float',
 'travel_time' => '\ithings\ptvxserver\model\Duration',
 'traffic_delay' => '\ithings\ptvxserver\model\Duration',
 'violated' => 'bool',
@@ -239,7 +239,7 @@ class AlternativeRoute implements ModelInterface, ArrayAccess
     /**
      * Gets distance
      *
-     * @return \ithings\ptvxserver\model\Distance
+     * @return float
      */
     public function getDistance()
     {
@@ -249,7 +249,7 @@ class AlternativeRoute implements ModelInterface, ArrayAccess
     /**
      * Sets distance
      *
-     * @param \ithings\ptvxserver\model\Distance $distance distance
+     * @param float $distance The distance of the complete route.
      *
      * @return $this
      */

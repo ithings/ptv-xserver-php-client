@@ -57,7 +57,7 @@ class PositionQuality implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'match_distance' => '\ithings\ptvxserver\model\Distance',
+        'match_distance' => 'float',
 'angle_difference' => '\ithings\ptvxserver\model\AngleDifference'    ];
 
     /**
@@ -209,7 +209,7 @@ class PositionQuality implements ModelInterface, ArrayAccess
     /**
      * Gets match_distance
      *
-     * @return \ithings\ptvxserver\model\Distance
+     * @return float
      */
     public function getMatchDistance()
     {
@@ -219,7 +219,7 @@ class PositionQuality implements ModelInterface, ArrayAccess
     /**
      * Sets match_distance
      *
-     * @param \ithings\ptvxserver\model\Distance $match_distance match_distance
+     * @param float $match_distance The straight-line distance (Euclidean distance) from the input position to the matching segment
      *
      * @return $this
      */

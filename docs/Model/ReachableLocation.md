@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**distance** | [**\ithings\ptvxserver\model\Distance**](Distance.md) |  | [optional] 
+**distance** | **float** | The distance from the input waypoint to this location or vice versa. | [optional] 
 **travel_time** | [**\ithings\ptvxserver\model\Duration**](Duration.md) |  | [optional] 
 **input_location_index** | [**\ithings\ptvxserver\model\Index**](Index.md) |  | [optional] 
 

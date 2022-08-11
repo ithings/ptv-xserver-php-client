@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**distance** | [**\ithings\ptvxserver\model\Distance**](Distance.md) |  | 
+**distance** | **float** | The accumulated distance of the segment during reachable areas calculation. | 
 **travel_time** | [**\ithings\ptvxserver\model\Duration**](Duration.md) |  | 
 **polyline** | [**\ithings\ptvxserver\model\EncodedGeometry**](EncodedGeometry.md) |  | [optional] 
 **id** | [**\ithings\ptvxserver\model\SegmentId**](SegmentId.md) |  | [optional] 

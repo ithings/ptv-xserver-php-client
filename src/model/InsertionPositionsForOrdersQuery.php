@@ -57,7 +57,7 @@ class InsertionPositionsForOrdersQuery extends ChangeToursProposalsQuery
         'order_ids' => 'string[]',
 'target_vehicle_ids' => 'string[]',
 'maximum_number_of_move_orders_actions' => '\ithings\ptvxserver\model\NonNegativeInteger',
-'maximum_distance_of_adjacent_stops' => '\ithings\ptvxserver\model\Distance'    ];
+'maximum_distance_of_adjacent_stops' => 'float'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -283,7 +283,7 @@ class InsertionPositionsForOrdersQuery extends ChangeToursProposalsQuery
     /**
      * Gets maximum_distance_of_adjacent_stops
      *
-     * @return \ithings\ptvxserver\model\Distance
+     * @return float
      */
     public function getMaximumDistanceOfAdjacentStops()
     {
@@ -293,7 +293,7 @@ class InsertionPositionsForOrdersQuery extends ChangeToursProposalsQuery
     /**
      * Sets maximum_distance_of_adjacent_stops
      *
-     * @param \ithings\ptvxserver\model\Distance $maximum_distance_of_adjacent_stops maximum_distance_of_adjacent_stops
+     * @param float $maximum_distance_of_adjacent_stops Option to restrict the number of proposals which may reduce the calculation time of the request. A MoveOrdersAction is proposed only if the airline distance of the leg between the sites of the given order and the adjacent stops in the tour is less than the given value.
      *
      * @return $this
      */

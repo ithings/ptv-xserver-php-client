@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **order_group_ids** | **string[]** |  | [optional] 
 **tour_start_interval** | [**\ithings\ptvxserver\model\StartEndInterval**](StartEndInterval.md) |  | [optional] 
 **maximum_number_of_customer_stops** | [**\ithings\ptvxserver\model\NonNegativeInteger**](NonNegativeInteger.md) |  | [optional] 
-**maximum_distance** | [**\ithings\ptvxserver\model\Distance**](Distance.md) |  | [optional] 
+**maximum_distance** | **float** | Restricts the maximum allowed total distance within the tour of this vehicle. If this parameter is set, maximum distance per tour at tour restrictions must not be set, otherwise an exception is thrown. If not given the maximum distance is unlimited. This restriction is ignored for ToursInExecutionRequests. | [optional] 
 **maximum_travel_time** | [**\ithings\ptvxserver\model\Duration**](Duration.md) |  | [optional] 
 **maximum_driving_time** | [**\ithings\ptvxserver\model\Duration**](Duration.md) |  | [optional] 
 **ignore_mixed_loading_prohibitions** | **bool** | Indicates whether the mixed loading prohibitions are relevant for this vehicle. If set to false, the mixed loading prohibitions -- if there are any -- must be respected on every trip of the vehicle. If set to true, the mixed loading prohibitions are ignored by the vehicle. | [optional] 

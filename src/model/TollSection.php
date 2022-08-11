@@ -59,7 +59,7 @@ class TollSection implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'cost' => '\ithings\ptvxserver\model\TollCost',
 'alternative_costs' => '\ithings\ptvxserver\model\TollCost[]',
-'official_distance' => '\ithings\ptvxserver\model\Distance',
+'official_distance' => 'float',
 'toll_road_type' => '\ithings\ptvxserver\model\TollRoadType',
 'country' => '\ithings\ptvxserver\model\CountryCode',
 'toll_system_index' => '\ithings\ptvxserver\model\Index',
@@ -296,7 +296,7 @@ class TollSection implements ModelInterface, ArrayAccess
     /**
      * Gets official_distance
      *
-     * @return \ithings\ptvxserver\model\Distance
+     * @return float
      */
     public function getOfficialDistance()
     {
@@ -306,7 +306,7 @@ class TollSection implements ModelInterface, ArrayAccess
     /**
      * Sets official_distance
      *
-     * @param \ithings\ptvxserver\model\Distance $official_distance official_distance
+     * @param float $official_distance The official distance defined by the toll operator. It is only populated if the toll operator provides an official distance.
      *
      * @return $this
      */

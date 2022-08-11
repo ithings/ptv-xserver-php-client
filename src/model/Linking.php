@@ -57,7 +57,7 @@ class Linking implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'maximum_distance_to_segment' => '\ithings\ptvxserver\model\Distance',
+        'maximum_distance_to_segment' => 'float',
 'minimum_network_class' => '\ithings\ptvxserver\model\NetworkClass',
 'maximum_network_class' => '\ithings\ptvxserver\model\NetworkClass'    ];
 
@@ -212,7 +212,7 @@ class Linking implements ModelInterface, ArrayAccess
     /**
      * Gets maximum_distance_to_segment
      *
-     * @return \ithings\ptvxserver\model\Distance
+     * @return float
      */
     public function getMaximumDistanceToSegment()
     {
@@ -222,7 +222,7 @@ class Linking implements ModelInterface, ArrayAccess
     /**
      * Sets maximum_distance_to_segment
      *
-     * @param \ithings\ptvxserver\model\Distance $maximum_distance_to_segment maximum_distance_to_segment
+     * @param float $maximum_distance_to_segment The maximum distance to search for a road segment to link to.
      *
      * @return $this
      */

@@ -63,7 +63,7 @@ class TourViolationReport extends ViolationReport
 'maximum_travel_time_per_driver_exceedance' => '\ithings\ptvxserver\model\Duration',
 'maximum_trip_start_interval_exceedance' => '\ithings\ptvxserver\model\Duration',
 'maximum_number_of_customer_stops_exceedance' => '\ithings\ptvxserver\model\PositiveInteger',
-'maximum_distance_exceedance' => '\ithings\ptvxserver\model\Distance'    ];
+'maximum_distance_exceedance' => 'float'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -463,7 +463,7 @@ class TourViolationReport extends ViolationReport
     /**
      * Gets maximum_distance_exceedance
      *
-     * @return \ithings\ptvxserver\model\Distance
+     * @return float
      */
     public function getMaximumDistanceExceedance()
     {
@@ -473,7 +473,7 @@ class TourViolationReport extends ViolationReport
     /**
      * Sets maximum_distance_exceedance
      *
-     * @param \ithings\ptvxserver\model\Distance $maximum_distance_exceedance maximum_distance_exceedance
+     * @param float $maximum_distance_exceedance The distance by which the the specified maximum distance per tour is exceeded. The limit is either specified by maximum distance of tour restrictions or maximum distance of vehicle. Corresponds to tour events with violation type MAXIMUM\\_DISTANCE.
      *
      * @return $this
      */

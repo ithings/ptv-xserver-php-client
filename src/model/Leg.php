@@ -65,7 +65,7 @@ class Leg implements ModelInterface, ArrayAccess
 'end_node_index' => '\ithings\ptvxserver\model\Index',
 'start_toll_section_index' => '\ithings\ptvxserver\model\Index',
 'end_toll_section_index' => '\ithings\ptvxserver\model\Index',
-'distance' => '\ithings\ptvxserver\model\Distance',
+'distance' => 'float',
 'travel_time' => '\ithings\ptvxserver\model\Duration',
 'traffic_delay' => '\ithings\ptvxserver\model\Duration',
 'toll_summary' => '\ithings\ptvxserver\model\TollSummary',
@@ -485,7 +485,7 @@ class Leg implements ModelInterface, ArrayAccess
     /**
      * Gets distance
      *
-     * @return \ithings\ptvxserver\model\Distance
+     * @return float
      */
     public function getDistance()
     {
@@ -495,7 +495,7 @@ class Leg implements ModelInterface, ArrayAccess
     /**
      * Sets distance
      *
-     * @param \ithings\ptvxserver\model\Distance $distance distance
+     * @param float $distance The travel distance for the leg. It is the sum of distances of all segments in the leg and hence is a whole number without decimal places (see Segment.distance).
      *
      * @return $this
      */

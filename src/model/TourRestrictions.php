@@ -60,7 +60,7 @@ class TourRestrictions implements ModelInterface, ArrayAccess
         'single_trip_per_tour' => 'bool',
 'single_depot_per_tour' => 'bool',
 'maximum_number_of_customer_stops_per_tour' => '\ithings\ptvxserver\model\NonNegativeInteger',
-'maximum_distance_per_tour' => '\ithings\ptvxserver\model\Distance',
+'maximum_distance_per_tour' => 'float',
 'maximum_travel_time_per_tour' => '\ithings\ptvxserver\model\Duration',
 'maximum_driving_time_per_tour' => '\ithings\ptvxserver\model\Duration',
 'working_hours' => '\ithings\ptvxserver\model\WorkingHours',
@@ -314,7 +314,7 @@ class TourRestrictions implements ModelInterface, ArrayAccess
     /**
      * Gets maximum_distance_per_tour
      *
-     * @return \ithings\ptvxserver\model\Distance
+     * @return float
      */
     public function getMaximumDistancePerTour()
     {
@@ -324,7 +324,7 @@ class TourRestrictions implements ModelInterface, ArrayAccess
     /**
      * Sets maximum_distance_per_tour
      *
-     * @param \ithings\ptvxserver\model\Distance $maximum_distance_per_tour maximum_distance_per_tour
+     * @param float $maximum_distance_per_tour Restricts the maximum allowed total distance per tour in meters. If this parameter is set, maximum distance at vehicles must not be set, otherwise an exception is thrown. Is infinite if it is not set. This restriction is ignored for ToursInExecutionRequests.
      *
      * @return $this
      */

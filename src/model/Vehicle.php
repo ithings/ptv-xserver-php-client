@@ -69,7 +69,7 @@ class Vehicle implements ModelInterface, ArrayAccess
 'order_group_ids' => 'string[]',
 'tour_start_interval' => '\ithings\ptvxserver\model\StartEndInterval',
 'maximum_number_of_customer_stops' => '\ithings\ptvxserver\model\NonNegativeInteger',
-'maximum_distance' => '\ithings\ptvxserver\model\Distance',
+'maximum_distance' => 'float',
 'maximum_travel_time' => '\ithings\ptvxserver\model\Duration',
 'maximum_driving_time' => '\ithings\ptvxserver\model\Duration',
 'ignore_mixed_loading_prohibitions' => 'bool'    ];
@@ -578,7 +578,7 @@ class Vehicle implements ModelInterface, ArrayAccess
     /**
      * Gets maximum_distance
      *
-     * @return \ithings\ptvxserver\model\Distance
+     * @return float
      */
     public function getMaximumDistance()
     {
@@ -588,7 +588,7 @@ class Vehicle implements ModelInterface, ArrayAccess
     /**
      * Sets maximum_distance
      *
-     * @param \ithings\ptvxserver\model\Distance $maximum_distance maximum_distance
+     * @param float $maximum_distance Restricts the maximum allowed total distance within the tour of this vehicle. If this parameter is set, maximum distance per tour at tour restrictions must not be set, otherwise an exception is thrown. If not given the maximum distance is unlimited. This restriction is ignored for ToursInExecutionRequests.
      *
      * @return $this
      */

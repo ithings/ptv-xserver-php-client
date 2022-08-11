@@ -59,7 +59,7 @@ class Segment implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'start_node_index' => '\ithings\ptvxserver\model\Index',
 'end_node_index' => '\ithings\ptvxserver\model\Index',
-'distance' => '\ithings\ptvxserver\model\Distance',
+'distance' => 'float',
 'travel_time' => '\ithings\ptvxserver\model\Duration',
 'travel_speed' => '\ithings\ptvxserver\model\Speed',
 'traffic_delay' => '\ithings\ptvxserver\model\Duration',
@@ -341,7 +341,7 @@ class Segment implements ModelInterface, ArrayAccess
     /**
      * Gets distance
      *
-     * @return \ithings\ptvxserver\model\Distance
+     * @return float
      */
     public function getDistance()
     {
@@ -351,7 +351,7 @@ class Segment implements ModelInterface, ArrayAccess
     /**
      * Sets distance
      *
-     * @param \ithings\ptvxserver\model\Distance $distance distance
+     * @param float $distance The travel distance for the segment. It is always a whole number and depends on the segment type as follows.     *  segments.SegmentType.NETWORK\\_SEGMENT. The distance on the network segment which is actually driven on.   *  segments.SegmentType.LINK\\_SEGMENT. The air-line distance between input and link node.   *  segments.SegmentType.COMBINED\\_TRANSPORT. The travel distance is always 0.   *  segments.SegmentType.NOT\\_DRIVING. The travel distance is always 0.
      *
      * @return $this
      */

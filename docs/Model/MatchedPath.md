@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**distance** | [**\ithings\ptvxserver\model\Distance**](Distance.md) |  | 
+**distance** | **float** | The distance of the complete path. It is the sum of distances of all TrackResponse.matchedPaths and hence is a whole number without decimal places. | 
 **encoded_path** | [**\ithings\ptvxserver\model\EncodedContent**](EncodedContent.md) |  | [optional] 
 **start_track_position_index** | [**\ithings\ptvxserver\model\Index**](Index.md) |  | [optional] 
 **end_track_position_index** | [**\ithings\ptvxserver\model\Index**](Index.md) |  | [optional] 

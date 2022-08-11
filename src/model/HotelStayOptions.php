@@ -57,8 +57,8 @@ class HotelStayOptions implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'maximum_travel_distance_to_hotel' => '\ithings\ptvxserver\model\Distance',
-'maximum_travel_distance_from_hotel' => '\ithings\ptvxserver\model\Distance'    ];
+        'maximum_travel_distance_to_hotel' => 'float',
+'maximum_travel_distance_from_hotel' => 'float'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -206,7 +206,7 @@ class HotelStayOptions implements ModelInterface, ArrayAccess
     /**
      * Gets maximum_travel_distance_to_hotel
      *
-     * @return \ithings\ptvxserver\model\Distance
+     * @return float
      */
     public function getMaximumTravelDistanceToHotel()
     {
@@ -216,7 +216,7 @@ class HotelStayOptions implements ModelInterface, ArrayAccess
     /**
      * Sets maximum_travel_distance_to_hotel
      *
-     * @param \ithings\ptvxserver\model\Distance $maximum_travel_distance_to_hotel maximum_travel_distance_to_hotel
+     * @param float $maximum_travel_distance_to_hotel Approximate upper bound on the distance in meters the field worker is willing to travel to a hotel after completing all visits of a day.
      *
      * @return $this
      */
@@ -230,7 +230,7 @@ class HotelStayOptions implements ModelInterface, ArrayAccess
     /**
      * Gets maximum_travel_distance_from_hotel
      *
-     * @return \ithings\ptvxserver\model\Distance
+     * @return float
      */
     public function getMaximumTravelDistanceFromHotel()
     {
@@ -240,7 +240,7 @@ class HotelStayOptions implements ModelInterface, ArrayAccess
     /**
      * Sets maximum_travel_distance_from_hotel
      *
-     * @param \ithings\ptvxserver\model\Distance $maximum_travel_distance_from_hotel maximum_travel_distance_from_hotel
+     * @param float $maximum_travel_distance_from_hotel Approximate upper bound on the distance in meters the field worker is willing to travel from a hotel to the first visit of a day.
      *
      * @return $this
      */

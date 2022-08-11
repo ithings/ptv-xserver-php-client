@@ -54,7 +54,7 @@ class RouteResponse extends ResponseBase
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'distance' => '\ithings\ptvxserver\model\Distance',
+        'distance' => 'float',
 'travel_time' => '\ithings\ptvxserver\model\Duration',
 'traffic_delay' => '\ithings\ptvxserver\model\Duration',
 'waypoints' => '\ithings\ptvxserver\model\Waypoint[]',
@@ -310,7 +310,7 @@ class RouteResponse extends ResponseBase
     /**
      * Gets distance
      *
-     * @return \ithings\ptvxserver\model\Distance
+     * @return float
      */
     public function getDistance()
     {
@@ -320,7 +320,7 @@ class RouteResponse extends ResponseBase
     /**
      * Sets distance
      *
-     * @param \ithings\ptvxserver\model\Distance $distance distance
+     * @param float $distance The distance of the complete route. It is the sum of distances of all segments and hence is a whole number without decimal places (see Segment.distance). It equals the sum of distances of all legs.
      *
      * @return $this
      */

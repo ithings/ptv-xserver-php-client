@@ -54,7 +54,7 @@ class TrackPosition extends Position
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'distance_from_previous_position' => '\ithings\ptvxserver\model\Distance'    ];
+        'distance_from_previous_position' => 'float'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -193,7 +193,7 @@ class TrackPosition extends Position
     /**
      * Gets distance_from_previous_position
      *
-     * @return \ithings\ptvxserver\model\Distance
+     * @return float
      */
     public function getDistanceFromPreviousPosition()
     {
@@ -203,7 +203,7 @@ class TrackPosition extends Position
     /**
      * Sets distance_from_previous_position
      *
-     * @param \ithings\ptvxserver\model\Distance $distance_from_previous_position distance_from_previous_position
+     * @param float $distance_from_previous_position The travel distance from the previous position to this position. This value can be provided to improve the quality of the track matching.
      *
      * @return $this
      */

@@ -55,7 +55,7 @@ class VisitSequenceResponse extends ResponseBase
       */
     protected static $swaggerTypes = [
         'sequence' => '\ithings\ptvxserver\model\VisitLocation[]',
-'distance' => '\ithings\ptvxserver\model\Distance',
+'distance' => 'float',
 'travel_time' => '\ithings\ptvxserver\model\Duration'    ];
 
     /**
@@ -229,7 +229,7 @@ class VisitSequenceResponse extends ResponseBase
     /**
      * Gets distance
      *
-     * @return \ithings\ptvxserver\model\Distance
+     * @return float
      */
     public function getDistance()
     {
@@ -239,7 +239,7 @@ class VisitSequenceResponse extends ResponseBase
     /**
      * Sets distance
      *
-     * @param \ithings\ptvxserver\model\Distance $distance distance
+     * @param float $distance Total distance traveled from start to end.
      *
      * @return $this
      */

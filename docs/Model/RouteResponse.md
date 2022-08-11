@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**distance** | [**\ithings\ptvxserver\model\Distance**](Distance.md) |  | 
+**distance** | **float** | The distance of the complete route. It is the sum of distances of all segments and hence is a whole number without decimal places (see Segment.distance). It equals the sum of distances of all legs. | 
 **travel_time** | [**\ithings\ptvxserver\model\Duration**](Duration.md) |  | 
 **traffic_delay** | [**\ithings\ptvxserver\model\Duration**](Duration.md) |  | [optional] 
 **waypoints** | [**\ithings\ptvxserver\model\Waypoint[]**](Waypoint.md) |  | [optional] 

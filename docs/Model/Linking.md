@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**maximum_distance_to_segment** | [**\ithings\ptvxserver\model\Distance**](Distance.md) |  | [optional] 
+**maximum_distance_to_segment** | **float** | The maximum distance to search for a road segment to link to. | [optional] 
 **minimum_network_class** | [**\ithings\ptvxserver\model\NetworkClass**](NetworkClass.md) |  | [optional] 
 **maximum_network_class** | [**\ithings\ptvxserver\model\NetworkClass**](NetworkClass.md) |  | [optional] 
 

@@ -57,7 +57,7 @@ class MatchedPath implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'distance' => '\ithings\ptvxserver\model\Distance',
+        'distance' => 'float',
 'encoded_path' => '\ithings\ptvxserver\model\EncodedContent',
 'start_track_position_index' => '\ithings\ptvxserver\model\Index',
 'end_track_position_index' => '\ithings\ptvxserver\model\Index'    ];
@@ -221,7 +221,7 @@ class MatchedPath implements ModelInterface, ArrayAccess
     /**
      * Gets distance
      *
-     * @return \ithings\ptvxserver\model\Distance
+     * @return float
      */
     public function getDistance()
     {
@@ -231,7 +231,7 @@ class MatchedPath implements ModelInterface, ArrayAccess
     /**
      * Sets distance
      *
-     * @param \ithings\ptvxserver\model\Distance $distance distance
+     * @param float $distance The distance of the complete path. It is the sum of distances of all TrackResponse.matchedPaths and hence is a whole number without decimal places.
      *
      * @return $this
      */

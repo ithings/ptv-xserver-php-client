@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **country** | [**\ithings\ptvxserver\model\CountryCode**](CountryCode.md) |  | 
 **linked_coordinate** | [**\ithings\ptvxserver\model\Coordinate**](Coordinate.md) |  | 
 **reference_coordinate** | [**\ithings\ptvxserver\model\Coordinate**](Coordinate.md) |  | 
-**link_distance** | [**\ithings\ptvxserver\model\Distance**](Distance.md) |  | 
+**link_distance** | **float** | Distance as the crow flies from the input coordinate to the linked coordinate. | 
 **link_travel_time** | [**\ithings\ptvxserver\model\Duration**](Duration.md) |  | 
 **node_index** | [**\ithings\ptvxserver\model\Index**](Index.md) |  | [optional] 
 

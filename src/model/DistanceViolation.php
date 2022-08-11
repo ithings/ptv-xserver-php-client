@@ -54,7 +54,7 @@ class DistanceViolation extends TourViolation
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'exceedance' => '\ithings\ptvxserver\model\Distance'    ];
+        'exceedance' => 'float'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -193,7 +193,7 @@ class DistanceViolation extends TourViolation
     /**
      * Gets exceedance
      *
-     * @return \ithings\ptvxserver\model\Distance
+     * @return float
      */
     public function getExceedance()
     {
@@ -203,7 +203,7 @@ class DistanceViolation extends TourViolation
     /**
      * Sets exceedance
      *
-     * @param \ithings\ptvxserver\model\Distance $exceedance exceedance
+     * @param float $exceedance Distance by which the limit is exceeded on the current leg in total.
      *
      * @return $this
      */

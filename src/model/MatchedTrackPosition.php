@@ -58,7 +58,7 @@ class MatchedTrackPosition implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'detail' => '\ithings\ptvxserver\model\MatchDetail',
-'distance_from_previous_match' => '\ithings\ptvxserver\model\Distance',
+'distance_from_previous_match' => 'float',
 'matched_segment' => '\ithings\ptvxserver\model\MatchedSegment',
 'matched_coordinate' => '\ithings\ptvxserver\model\Coordinate',
 'quality' => '\ithings\ptvxserver\model\PositionQuality'    ];
@@ -251,7 +251,7 @@ class MatchedTrackPosition implements ModelInterface, ArrayAccess
     /**
      * Gets distance_from_previous_match
      *
-     * @return \ithings\ptvxserver\model\Distance
+     * @return float
      */
     public function getDistanceFromPreviousMatch()
     {
@@ -261,7 +261,7 @@ class MatchedTrackPosition implements ModelInterface, ArrayAccess
     /**
      * Sets distance_from_previous_match
      *
-     * @param \ithings\ptvxserver\model\Distance $distance_from_previous_match distance_from_previous_match
+     * @param float $distance_from_previous_match The travel distance from the MatchedPosition.matchedCoordinate of the previous matched position to the MatchedPosition.matchedCoordinate of this matched position. It is available only if MatchedTrackPosition.detail is MATCH\\_SUCCESSFUL.
      *
      * @return $this
      */

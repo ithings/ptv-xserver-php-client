@@ -54,7 +54,7 @@ class DistanceMatrixContentsArrays extends DistanceMatrixContents
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'distances' => '\ithings\ptvxserver\model\Distance[]',
+        'distances' => 'float[]',
 'travel_times' => '\ithings\ptvxserver\model\Duration[]',
 'violated' => 'bool[]',
 'estimated_by_direct_distance' => 'bool[]',
@@ -217,7 +217,7 @@ class DistanceMatrixContentsArrays extends DistanceMatrixContents
     /**
      * Gets distances
      *
-     * @return \ithings\ptvxserver\model\Distance[]
+     * @return float[]
      */
     public function getDistances()
     {
@@ -227,7 +227,7 @@ class DistanceMatrixContentsArrays extends DistanceMatrixContents
     /**
      * Sets distances
      *
-     * @param \ithings\ptvxserver\model\Distance[] $distances distances
+     * @param float[] $distances distances
      *
      * @return $this
      */

@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **start_node_index** | [**\ithings\ptvxserver\model\Index**](Index.md) |  | [optional] 
 **end_node_index** | [**\ithings\ptvxserver\model\Index**](Index.md) |  | [optional] 
-**distance** | [**\ithings\ptvxserver\model\Distance**](Distance.md) |  | 
+**distance** | **float** | The travel distance for the segment. It is always a whole number and depends on the segment type as follows.     *  segments.SegmentType.NETWORK\\_SEGMENT. The distance on the network segment which is actually driven on.   *  segments.SegmentType.LINK\\_SEGMENT. The air-line distance between input and link node.   *  segments.SegmentType.COMBINED\\_TRANSPORT. The travel distance is always 0.   *  segments.SegmentType.NOT\\_DRIVING. The travel distance is always 0. | 
 **travel_time** | [**\ithings\ptvxserver\model\Duration**](Duration.md) |  | 
 **travel_speed** | [**\ithings\ptvxserver\model\Speed**](Speed.md) |  | 
 **traffic_delay** | [**\ithings\ptvxserver\model\Duration**](Duration.md) |  | [optional] 

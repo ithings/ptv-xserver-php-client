@@ -59,7 +59,7 @@ class MatchQuality implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'total_score' => '\ithings\ptvxserver\model\Percent',
 'address_scores' => '\ithings\ptvxserver\model\AddressScores',
-'distance' => '\ithings\ptvxserver\model\Distance'    ];
+'distance' => 'float'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -260,7 +260,7 @@ class MatchQuality implements ModelInterface, ArrayAccess
     /**
      * Gets distance
      *
-     * @return \ithings\ptvxserver\model\Distance
+     * @return float
      */
     public function getDistance()
     {
@@ -270,7 +270,7 @@ class MatchQuality implements ModelInterface, ArrayAccess
     /**
      * Sets distance
      *
-     * @param \ithings\ptvxserver\model\Distance $distance distance
+     * @param float $distance The spatial distance between the result and the input coordinate of a reverse geocoding request.
      *
      * @return $this
      */

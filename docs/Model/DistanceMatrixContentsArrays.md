@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**distances** | [**\ithings\ptvxserver\model\Distance[]**](Distance.md) |  | [optional] 
+**distances** | **float[]** |  | [optional] 
 **travel_times** | [**\ithings\ptvxserver\model\Duration[]**](Duration.md) |  | [optional] 
 **violated** | **bool[]** |  | [optional] 
 **estimated_by_direct_distance** | **bool[]** |  | [optional] 

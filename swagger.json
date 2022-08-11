@@ -2879,7 +2879,7 @@
       "properties" : {
         "distance" : {
           "description" : "The distance of the complete route.",
-          "$ref" : "#/definitions/Distance"
+          "type" : "number"
         },
         "travelTime" : {
           "description" : "The travel time for the complete route.",
@@ -3842,7 +3842,7 @@
         },
         "distance" : {
           "description" : "The total driven distance.",
-          "$ref" : "#/definitions/Distance"
+          "type" : "number"
         }
       },
       "description" : "Cost related information describing tours or trips. The cost report contains accumulated values describing its parent object, which is either a tour response, a tour report or a trip report.\nHint: Corresponding type in xServer API documentation - com.ptvgroup.xserver.xtour.CostReport"
@@ -4588,7 +4588,7 @@
         "properties" : {
           "distance" : {
             "description" : "A distance that specifies the range of the horizon.",
-            "$ref" : "#/definitions/Distance"
+            "type" : "number"
           }
         },
         "description" : "Represents a geographical horizon that is described by a distance. Every point or road segment that is reachable from the source within the specified distance is included in the horizon.\nHint: Corresponding type in xServer API documentation - com.ptvgroup.xserver.routing.DistanceBasedHorizon"
@@ -4617,7 +4617,7 @@
             "type" : "array",
             "items" : {
               "description" : "The distances of the requested matrix elements.",
-              "$ref" : "#/definitions/Distance"
+              "type" : "number"
             }
           },
           "travelTimes" : {
@@ -5000,7 +5000,7 @@
         "properties" : {
           "exceedance" : {
             "description" : "Distance by which the limit is exceeded on the current leg in total.",
-            "$ref" : "#/definitions/Distance"
+            "type" : "number"
           }
         },
         "description" : "Specifies a violation that involves a distance limit. This violation has one of the following tour event violation types: MAXIMUM\\_DISTANCE.\nHint: Corresponding type in xServer API documentation - com.ptvgroup.xserver.tourplanning.DistanceViolation"
@@ -7251,11 +7251,11 @@
       "properties" : {
         "maximumTravelDistanceToHotel" : {
           "description" : "Approximate upper bound on the distance in meters the field worker is willing to travel to a hotel after completing all visits of a day.",
-          "$ref" : "#/definitions/Distance"
+          "type" : "number"
         },
         "maximumTravelDistanceFromHotel" : {
           "description" : "Approximate upper bound on the distance in meters the field worker is willing to travel from a hotel to the first visit of a day.",
-          "$ref" : "#/definitions/Distance"
+          "type" : "number"
         }
       },
       "description" : "Options influencing use cases with overnight stays at hotels.\nHint: Corresponding type in xServer API documentation - com.ptvgroup.xserver.xcluster.HotelStayOptions"
@@ -7524,7 +7524,7 @@
           },
           "maximumDistanceOfAdjacentStops" : {
             "description" : "Option to restrict the number of proposals which may reduce the calculation time of the request. A MoveOrdersAction is proposed only if the airline distance of the leg between the sites of the given order and the adjacent stops in the tour is less than the given value.",
-            "$ref" : "#/definitions/Distance"
+            "type" : "number"
           }
         },
         "description" : "A query to propose insertion positions for unplanned orders. Only structurally valid positions are proposed, for details please have a look at tour structures. The proposed change tours actions are either add trip actions or move orders actions. If violated insertion positions shall be part of the proposals, set returnViolatedTours to true. The resulting tour is contained in the Tours and TourReports. This query may be used to analyze unscheduled orders, see the corresponding integration sample.\nHint: Corresponding type in xServer API documentation - com.ptvgroup.xserver.xtour.InsertionPositionsForOrdersQuery"
@@ -7963,7 +7963,7 @@
         },
         "distance" : {
           "description" : "The travel distance for the leg. It is the sum of distances of all segments in the leg and hence is a whole number without decimal places (see Segment.distance).",
-          "$ref" : "#/definitions/Distance"
+          "type" : "number"
         },
         "travelTime" : {
           "description" : "The travel time for the leg. It is the sum of travel times of all segments in the leg and hence has up to three decimal places (see Segment.travelTime).",
@@ -8009,7 +8009,7 @@
         },
         "distance" : {
           "description" : "The driven distance between start and end location.",
-          "$ref" : "#/definitions/Distance"
+          "type" : "number"
         },
         "estimatedByDirectDistance" : {
           "type" : "boolean",
@@ -8159,7 +8159,7 @@
       "properties" : {
         "maximumDistanceToSegment" : {
           "description" : "The maximum distance to search for a road segment to link to.",
-          "$ref" : "#/definitions/Distance"
+          "type" : "number"
         },
         "minimumNetworkClass" : {
           "description" : "Link only to roads that have a network class bigger or equal the minimumNetworkClass.",
@@ -8512,7 +8512,7 @@
           },
           "radius" : {
             "description" : "A radius that specifies how close the route shall pass by the specified coordinate. This radius refers to the distance on the road network in meters.",
-            "$ref" : "#/definitions/Distance"
+            "type" : "number"
           }
         },
         "description" : "Specifies an input waypoint in order to manipulate the course of the route. There is no output waypoint and there is no leg that ends at this waypoint. The route passes near the specified coordinate. This waypoint cannot be used as first or last input waypoint.\nHint: Corresponding type in xServer API documentation - com.ptvgroup.xserver.xroute.ManipulateRouteWaypoint"
@@ -8890,7 +8890,7 @@
         },
         "distance" : {
           "description" : "The spatial distance between the result and the input coordinate of a reverse geocoding request.",
-          "$ref" : "#/definitions/Distance"
+          "type" : "number"
         }
       },
       "description" : "Indicates how well a result matches the search request.\nHint: Corresponding type in xServer API documentation - com.ptvgroup.xserver.xlocate.MatchQuality"
@@ -8964,7 +8964,7 @@
       "properties" : {
         "distance" : {
           "description" : "The distance of the complete path. It is the sum of distances of all TrackResponse.matchedPaths and hence is a whole number without decimal places.",
-          "$ref" : "#/definitions/Distance"
+          "type" : "number"
         },
         "encodedPath" : {
           "description" : "Encoded string describing a complete track. Use this string as an input of a route request to calculate routing related information like toll prices or emissions. It is available only if the encodedPath is requested by MatchTrackResultFields.encodedPath.",
@@ -9029,7 +9029,7 @@
         },
         "distanceFromPreviousMatch" : {
           "description" : "The travel distance from the MatchedPosition.matchedCoordinate of the previous matched position to the MatchedPosition.matchedCoordinate of this matched position. It is available only if MatchedTrackPosition.detail is MATCH\\_SUCCESSFUL.",
-          "$ref" : "#/definitions/Distance"
+          "type" : "number"
         },
         "matchedSegment" : {
           "description" : "The segment to which the input position matches. It is available only if MatchedTrackPosition.detail is MATCH\\_SUCCESSFUL.",
@@ -10803,7 +10803,7 @@
       "properties" : {
         "matchDistance" : {
           "description" : "The straight-line distance (Euclidean distance) from the input position to the matching segment",
-          "$ref" : "#/definitions/Distance"
+          "type" : "number"
         },
         "angleDifference" : {
           "description" : "The difference between the angle of the heading of the input position and the angle of the matching segment",
@@ -11144,7 +11144,7 @@
       "properties" : {
         "distance" : {
           "description" : "The accumulated distance of the segment during reachable areas calculation.",
-          "$ref" : "#/definitions/Distance"
+          "type" : "number"
         },
         "travelTime" : {
           "description" : "The accumulated travel time of the segment during reachable areas calculation.",
@@ -11192,7 +11192,7 @@
       "properties" : {
         "distance" : {
           "description" : "The distance from the input waypoint to this location or vice versa.",
-          "$ref" : "#/definitions/Distance"
+          "type" : "number"
         },
         "travelTime" : {
           "description" : "The travel time from the input waypoint to this location or vice versa.",
@@ -11960,7 +11960,7 @@
         },
         "distanceFromStart" : {
           "description" : "The distance of the route from the start up to this event.",
-          "$ref" : "#/definitions/Distance"
+          "type" : "number"
         },
         "travelTimeFromStart" : {
           "description" : "The travel time for the route from the start up to this event.",
@@ -12118,7 +12118,7 @@
         "properties" : {
           "distance" : {
             "description" : "The distance of the complete route. It is the sum of distances of all segments and hence is a whole number without decimal places (see Segment.distance). It equals the sum of distances of all legs.",
-            "$ref" : "#/definitions/Distance"
+            "type" : "number"
           },
           "travelTime" : {
             "description" : "The travel time for the complete route. It is the sum of travel times of all segments and hence has up to three decimal places (see Segment.travelTime). It equals the sum of travel times of all legs.",
@@ -12812,7 +12812,7 @@
         },
         "distance" : {
           "description" : "The travel distance for the segment. It is always a whole number and depends on the segment type as follows.\r\n\r\n *  segments.SegmentType.NETWORK\\_SEGMENT. The distance on the network segment which is actually driven on.\r\n *  segments.SegmentType.LINK\\_SEGMENT. The air-line distance between input and link node.\r\n *  segments.SegmentType.COMBINED\\_TRANSPORT. The travel distance is always 0.\r\n *  segments.SegmentType.NOT\\_DRIVING. The travel distance is always 0.",
-          "$ref" : "#/definitions/Distance"
+          "type" : "number"
         },
         "travelTime" : {
           "description" : "The travel time for the segment. It has up to three decimal places and depends on the segment type as follows.\r\n\r\n *  segments.SegmentType.NETWORK\\_SEGMENT. The travel time is calculated from the segment length and the travel speed (see below).\r\n *  segments.SegmentType.LINK\\_SEGMENT. The travel time is calculated from the segment length and the travel speed (see below).\r\n *  segments.SegmentType.COMBINED\\_TRANSPORT. The travel time is taken from the data which does not necessarily equal the actual time the combined transport takes. In this case the travel time is always a whole number.\r\n *  segments.SegmentType.NOT\\_DRIVING. The travel time is only grater 0 if there is a waiting time associated.\r\n\r\nIf the segment distance is larger than 0 it is guaranteed that also the travel time is larger than 0. The travel times calculated based on travel speed are rounded to milliseconds.",
@@ -14186,7 +14186,7 @@
         },
         "officialDistance" : {
           "description" : "The official distance defined by the toll operator. It is only populated if the toll operator provides an official distance.",
-          "$ref" : "#/definitions/Distance"
+          "type" : "number"
         },
         "tollRoadType" : {
           "description" : "The toll road type refers to the reason why toll is charged, e.g. tunnel, bridge, or mountain pass.",
@@ -14430,7 +14430,7 @@
         },
         "maximumDistancePerTour" : {
           "description" : "Restricts the maximum allowed total distance per tour in meters. If this parameter is set, maximum distance at vehicles must not be set, otherwise an exception is thrown. Is infinite if it is not set. This restriction is ignored for ToursInExecutionRequests.",
-          "$ref" : "#/definitions/Distance"
+          "type" : "number"
         },
         "maximumTravelTimePerTour" : {
           "description" : "Restricts the maximum allowed total travel time per tour in seconds. The travel time contains all waiting, service and driving times. Drivers' working hours may be more restrictive and enforce a lower limit. If this parameter is set, maximum travel time at vehicles must not be set, otherwise an exception is thrown. Is infinite if it is not set. This restriction is ignored for ToursInExecutionRequests.",
@@ -14544,7 +14544,7 @@
           },
           "maximumDistanceExceedance" : {
             "description" : "The distance by which the the specified maximum distance per tour is exceeded. The limit is either specified by maximum distance of tour restrictions or maximum distance of vehicle. Corresponds to tour events with violation type MAXIMUM\\_DISTANCE.",
-            "$ref" : "#/definitions/Distance"
+            "type" : "number"
           }
         },
         "description" : "Violation related information describing tours. The tour violation report contains violation summaries of its parent object, which is a tour report.\nHint: Corresponding type in xServer API documentation - com.ptvgroup.xserver.xtour.TourViolationReport"
@@ -14678,7 +14678,7 @@
         "properties" : {
           "distanceFromPreviousPosition" : {
             "description" : "The travel distance from the previous position to this position. This value can be provided to improve the quality of the track matching.",
-            "$ref" : "#/definitions/Distance"
+            "type" : "number"
           }
         },
         "description" : "Describes a position which belongs to a track by additional track related attributes.\nHint: Corresponding type in xServer API documentation - com.ptvgroup.xserver.xmatch.TrackPosition"
@@ -14695,7 +14695,7 @@
         "properties" : {
           "distance" : {
             "description" : "The distance of the complete track. It is the sum of distances of all TrackResponse.matchedPaths and hence is a whole number without decimal places.",
-            "$ref" : "#/definitions/Distance"
+            "type" : "number"
           },
           "matchedPaths" : {
             "type" : "array",
@@ -15173,7 +15173,7 @@
         },
         "maximumDistance" : {
           "description" : "Restricts the maximum allowed total distance within the tour of this vehicle. If this parameter is set, maximum distance per tour at tour restrictions must not be set, otherwise an exception is thrown. If not given the maximum distance is unlimited. This restriction is ignored for ToursInExecutionRequests.",
-          "$ref" : "#/definitions/Distance"
+          "type" : "number"
         },
         "maximumTravelTime" : {
           "description" : "Restricts the maximum allowed total travel time within the tour of this vehicle. The travel time contains all waiting, service and driving times. Drivers' working hours may be more restrictive and enforce a lower limit. If this parameter is set, maximum travel time per tour at tour restrictions must not be set, otherwise an exception is thrown. If not given the maximum travel time is unlimited. This restriction is ignored for ToursInExecutionRequests.",
@@ -15666,7 +15666,7 @@
           },
           "distance" : {
             "description" : "Total distance traveled from start to end.",
-            "$ref" : "#/definitions/Distance"
+            "type" : "number"
           },
           "travelTime" : {
             "description" : "Total estimated travel time from start to end.",
@@ -15809,7 +15809,7 @@
         },
         "linkDistance" : {
           "description" : "Distance as the crow flies from the input coordinate to the linked coordinate.",
-          "$ref" : "#/definitions/Distance"
+          "type" : "number"
         },
         "linkTravelTime" : {
           "description" : "Assumed travel time it takes to get from the input coordinate to the linked coordinate. The speed can be configured by vehicleprofile.Speeds.speedForLinkDistance.",
